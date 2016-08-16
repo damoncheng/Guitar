@@ -1,0 +1,22 @@
+from tkinter import *
+from tkinter import ttk
+
+class Key:
+
+    frame = ""
+    label = ""
+
+    def __init__(self,root):
+        self.create_key(root)
+
+    def create_key(self, root):
+        self.frame = Frame(root)
+        self.frame.grid(column=0, row=0, sticky="eswn")
+        self.frame.rowconfigure(0, weight=1)
+        self.frame.columnconfigure(0, weight=1)
+        self.label = ttk.Label(self.frame, text="label")
+        self.label.grid(column=0, row=0)
+
+        
+    def show_key(self, current):
+        self.frame.lift()

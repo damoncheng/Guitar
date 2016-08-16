@@ -1,0 +1,8 @@
+#!c:\python27\python.exe
+
+#print "hello python"
+
+import Tkinter
+
+Tkinter._test()
+Tkinter.Tcl().eval("info patchlevel")
